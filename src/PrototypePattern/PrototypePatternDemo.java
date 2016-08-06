@@ -3,7 +3,8 @@ package PrototypePattern;
 public class PrototypePatternDemo {
 	public static void main(String[] args) {
 		ShapeCache.loadCache();
-
+		System.out.println("prototype pattern demo");
+		
 		Shape clonedShape = (Shape) ShapeCache.getShape("1");
 		System.out.println("Shape : "+clonedShape.getType());
 
